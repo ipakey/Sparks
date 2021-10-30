@@ -1,0 +1,204 @@
+/*colour variables */
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,100&family=Bad+Script&family=Cinzel+Decorative&family=Farsan&display=swap");
+/* screen sizing */
+/* div formatting */
+/* Buttons */
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,100&family=Bad+Script&family=Cinzel+Decorative&family=Farsan&display=swap");
+/*colour variables */
+/* screen sizing */
+/* div formatting */
+/* Buttons */
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,100&family=Bad+Script&family=Cinzel+Decorative&family=Farsan&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,100&family=Bad+Script&family=Cinzel+Decorative&family=Farsan&display=swap");
+/* use files */
+/* local variables*/
+/* Reset Page*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main html objects */
+html {
+  font-size: 24px;
+}
+
+body {
+  width: 100%;
+  background-color: #121270;
+}
+
+/* main */
+p {
+  font-family: "Bad Script", cursive;
+  color: #fffacd;
+}
+
+/*colour variables */
+/* screen sizing */
+/* div formatting */
+/* Buttons */
+/* use files */
+/* Button Variables */
+.btn-s2 {
+  display: inline-block;
+  padding: 0.2rem 0.4rem;
+  border-radius: 1rem;
+  background-color: #72acdb;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #fffacd;
+  cursor: pointer;
+  width: 45%;
+  border: 3pt solid #fffacd;
+  font-family: "Bad Script", cursive;
+  min-width: 210px;
+  z-index: 3;
+  margin: 2px 8px;
+}
+
+.btn-s2:hover,
+.btn-s2:hover {
+  border: 3px solid dodgerblue;
+  content: "";
+  position: absolute;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.btn-s2:hover::after {
+  transform: translate(5px, 5px);
+  border: 3px solid #fffacd;
+}
+
+/*colour variables */
+/* screen sizing */
+/* div formatting */
+/* Buttons */
+/* use files */
+/* local variables*/
+/* Classes   */
+.page-header {
+  display: flex;
+  flex-direction: row;
+  background-color: #fffacd;
+  border: #fffacd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+page-header div:nth-of-type(1) {
+  flex-grow: 1;
+}
+
+page-header div:nth-of-type(2) {
+  flex-grow: 1;
+}
+
+page-header div:nth-of-type(3) {
+  flex-grow: 6;
+}
+
+page-header div:nth-of-type(4) {
+  flex-grow: 1;
+}
+
+page-header div:nth-of-type(5) {
+  flex-grow: 3;
+}
+
+.header__logo-picture {
+  width: 150px;
+  height: 150px;
+  background-color: #fffacd;
+}
+
+.header__BS {
+  font-family: "Bad Script", cursive;
+  font-size: 1.6rem;
+  margin: 10px;
+  padding: 10px;
+  color: #121270;
+  background-color: #fffacd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__Cz {
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 1.6rem;
+  margin: 10px;
+  padding: 10px;
+  color: #121270;
+  background-color: #fffacd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__log-in-form {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  border: #121270 solid 3px;
+  color: #121270;
+  background-color: #72acdb;
+  margin: 2px;
+  padding: 0.4rem;
+  border-color: #121270;
+  border-radius: 25px 25px 25px 0;
+  /* This line was updated */
+}
+
+.form__btn-grp {
+  flex-direction: row;
+  padding: 3px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.form__log-in-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bad Script", cursive;
+  font-size: 0.8rem;
+  color: #121270;
+  background-color: transparent;
+  border: none;
+}
+
+.form__log-in-msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bad Script", cursive;
+  padding: 2px 10px;
+  font-size: 1rem;
+  color: #fffacd;
+  margin-left: 5px;
+  background-color: transparent;
+  border: none;
+}
+
+.right-justify {
+  margin-right: 0;
+}
+
+.empty {
+  color: #fffacd;
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */

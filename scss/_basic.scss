@@ -1,0 +1,39 @@
+/* use files */
+@use 'colors';
+@use 'mixins';
+@use 'fonts';
+
+/* local variables*/
+$text: colors.$text-color;
+$background: colors.$body-bg;
+$accent-txt: colors.$body-bg;
+$accent-bg: colors.$text-color;
+$link-txt: colors.$warning;
+
+
+/* Reset Page*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main html objects */
+html{
+    font-size: 24px;
+}
+
+body{
+    width: 100%;
+    background-color: $background;
+}
+
+
+/* main */
+
+
+p{
+    font-family: fonts.$BS;
+    color: $text;
+}
+

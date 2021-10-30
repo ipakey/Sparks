@@ -1,0 +1,108 @@
+/* use files */
+@use 'colors';
+@use 'mixins';
+@use 'fonts';
+
+/* local variables*/
+$text: colors.$header-color;
+$background: colors.$header-bg;
+$accent-txt: colors.$text-color;
+$accent-bg: colors.$body-bg;
+$link-txt: colors.$logIn-bg;
+
+
+
+/* Classes   */
+
+.page-header{
+    display: flex;
+    flex-direction: row;
+    background-color: $background;
+    border: $accent-txt;
+    @include mixins.flexCenter;
+}
+
+page-header div:nth-of-type(1) {flex-grow: 1;}
+page-header div:nth-of-type(2) {flex-grow: 1;}
+page-header div:nth-of-type(3) {flex-grow: 6;}
+page-header div:nth-of-type(4) {flex-grow: 1;}
+page-header div:nth-of-type(5) {flex-grow: 3;}
+
+
+.header__logo-picture{
+    width: 150px;   
+    height: 150px;
+    background-color: $background;
+}
+
+.header__BS{
+    font-family: fonts.$BS;
+    font-size: 1.6rem;
+    margin: 10px;
+    padding: 10px;
+    color: $text;
+    background-color: $background;
+    @include mixins.flexCenter;
+}
+
+.header__Cz{
+    font-family: fonts.$Cz;
+    font-size: 1.6rem;
+    margin: 10px;
+    padding: 10px;
+    color: $text;
+    background-color: $background;
+    @include mixins.flexCenter;
+}
+
+.form__log-in-form{
+    display: flex;
+    flex-direction: column;
+    @include mixins.flexSpaced;
+    border: $accent-bg solid 3px;
+    color: $text;
+    background-color: $link-txt;
+    margin: 2px;
+    padding: .4rem;
+    border-color: $text;
+    border-radius: 25px 25px 25px 0; /* This line was updated */
+
+}
+
+.form__btn-grp{
+    flex-direction: row;
+    padding: 3px 10px;
+    @include mixins.flexSpaced;
+}
+
+.form__log-in-txt{
+    @include mixins.flexCenter;
+    font-family: fonts.$BS;
+    //padding: 2px 10px;
+    font-size: 0.8rem;
+    color: $text;
+    background-color: transparent;
+ 
+    border: none;
+}
+
+.form__log-in-msg{
+    @include mixins.flexCenter;
+    font-family: fonts.$BS;
+    padding: 2px 10px;
+    font-size: 1rem;
+    color: $accent-txt;
+    margin-left: 5px;
+    background-color: transparent;
+    border: none;
+}
+
+.right-justify{
+    margin-right: 0;
+}
+
+.empty{
+    color: $background;
+    font-size: 1rem;
+}
+

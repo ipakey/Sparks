@@ -1,0 +1,67 @@
+/* use files */
+@use 'colors';
+@use 'mixins';
+@use 'fonts';
+
+/* Button Variables */
+
+$btn-padding: .2rem .4rem;
+$btn-margin: .3rem;
+$btn-border-radius: 1rem;
+$btn-font-size: 0.8rem;
+$btn-font-color: colors.$text-color;
+$btn-font-bg: colors.$card-bg;
+$btn-backgr: colors.$logIn-bg;
+$btn-font: fonts.$BS;
+
+$btn-types: "input" "submit";
+
+@mixin btn-reset(){
+    // display
+    display: inline-block;
+    //height width margin padding
+    padding: $btn-padding;
+    //margin:$btn-margin;
+    border-radius: $btn-border-radius;
+    background-color: $btn-backgr;
+    text-align: center;
+    text-decoration: none;
+    font-size: $btn-font-size;
+    color: $btn-font-color;
+    //other
+    cursor: pointer;
+    
+}
+
+
+@mixin btn{
+    @include btn-reset;
+    width: 45%;
+    border: 3pt solid $btn-font-color;
+    font-family: $btn-font;
+    min-width: 210px;
+    z-index: 3;
+    margin: 2px 8px;
+}
+
+.btn-s2{
+    @include btn;
+}
+
+.btn-s2:hover,
+.btn-s2:hover {
+  border: 3px solid $btn-font-bg;
+  content: "";
+  position: absolute;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.btn-s2:hover::after {
+  transform: translate(5px, 5px);
+  border: 3px solid $btn-font-color;
+}
