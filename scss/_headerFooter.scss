@@ -59,12 +59,11 @@ page-header div:nth-of-type(5) {flex-grow: 3;}
     display: flex;
     flex-direction: column;
     @include mixins.flexSpaced;
-    border: $accent-bg solid 3px;
     color: $text;
     background-color: $link-txt;
     margin: 2px;
     padding: .4rem;
-    border-color: $text;
+    border: solid $text;
     border-radius: 25px 25px 25px 0; /* This line was updated */
 
 }

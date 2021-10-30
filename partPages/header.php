@@ -50,8 +50,8 @@
                     </div>
                     <div class='form__btn-grp'>
 			
-					<button class='btn-s2'><input class='form__log-in-txt' type='text' name='nameKwnas' placeholder='Name'></button>	
-						<button class='btn-s2'><input class='form__log-in-txt' type='password' name='password'  placeholder='Password'></button>
+					<button class='btn-'><input class='form__log-in-txt' type='text' name='nameKwnas' placeholder='Name'></button>	
+						<button class='btn'><input class='form__log-in-txt' type='password' name='password'  placeholder='Password'></button>
                     </div>
 					</form>";
 				}

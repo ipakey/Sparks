@@ -41,10 +41,10 @@ p {
 /* Buttons */
 /* use files */
 /* Button Variables */
-.btn-s2 {
+.btn {
   display: inline-block;
   padding: 0.2rem 0.4rem;
-  border-radius: 1rem;
+  border-radius: 0;
   background-color: #72acdb;
   text-align: center;
   text-decoration: none;
@@ -52,29 +52,62 @@ p {
   color: #fffacd;
   cursor: pointer;
   width: 45%;
-  border: 3pt solid #fffacd;
+  border: 3pt solid #72acdb;
   font-family: "Bad Script", cursive;
   min-width: 210px;
   z-index: 3;
   margin: 2px 8px;
+  text-decoration: none;
+  position: relative;
+  width: fit-content;
+  background-color: #72acdb;
 }
 
-.btn-s2:hover,
-.btn-s2:hover {
+.btn-s2 {
+  display: inline-block;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0;
+  background-color: #72acdb;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #fffacd;
+  cursor: pointer;
+  width: 45%;
+  border: 3pt solid #72acdb;
+  font-family: "Bad Script", cursive;
+  min-width: 210px;
+  z-index: 3;
+  margin: 2px 8px;
+  text-decoration: none;
+  position: relative;
+}
+
+.btn-s2::after,
+.btn-s2::before {
   border: 3px solid dodgerblue;
   content: "";
   position: absolute;
-  width: calc(100% - 6px);
-  height: calc(100% - 6px);
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
   left: 0;
   bottom: 0;
   z-index: -1;
   transition: transform 0.3s ease;
 }
 
-.btn-s2:hover::after {
-  transform: translate(5px, 5px);
+.btn-s2:hover {
+  transform: translate(0px, 2px);
   border: 3px solid #fffacd;
+  background-color: #72acdb;
+}
+
+.btn-s2:hover::after {
+  transform: translate(2px, 2px);
+}
+
+.btn-s2:hover::after {
+  transform: translate(4px, 4px);
 }
 
 /*colour variables */
@@ -150,12 +183,11 @@ page-header div:nth-of-type(5) {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  border: #121270 solid 3px;
   color: #121270;
   background-color: #72acdb;
   margin: 2px;
   padding: 0.4rem;
-  border-color: #121270;
+  border: solid #121270;
   border-radius: 25px 25px 25px 0;
   /* This line was updated */
 }
